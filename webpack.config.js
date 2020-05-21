@@ -1,9 +1,9 @@
-const currentTask = process.env.npm_lifecycle_event
-const path = require('path')
-const {CleanWebpackPlugin} = require('clean-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const fse = require('fs-extra')
+const currentTask = process.env.npm_lifecycle_event;
+const path = require('path');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const fse = require('fs-extra');
 
 const postCSSPlugins = [
   require('postcss-import'),
@@ -93,4 +93,4 @@ if (currentTask == 'build') {
   )
 }
 
-module.exports = config
+module.exports = config;
